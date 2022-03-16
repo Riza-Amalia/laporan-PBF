@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "nim": 1941720005,
+      "nama": "Riza Amalia Hariyanti",
+      "alamat": "Jl. Soekarno Hatta No. 9 Malang",
+      "hp": "085156163623",
+      "angkatan": 2019,
+      "status": "aktif"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
