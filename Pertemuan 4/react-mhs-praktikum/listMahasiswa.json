@@ -7,6 +7,25 @@
       "hp": "085156163623",
       "angkatan": 2019,
       "status": "aktif"
+    },
+    {
+      "id": 1648434093451,
+      "nim": "1941720173",
+      "nama": "test",
+      "alamat": "malang",
+      "hp": "123456789",
+      "angkatan": "2019",
+      "status": "Aktif"
+    },
+    {
+      "id": 1648435259293,
+      "nim": "1941720173",
+      "nama": "Amalia",
+      "alamat": "Malang",
+      "hp": "123456789",
+      "angkatan": "2019",
+      "status": "Aktif",
+      "date": "2022-03-28"
     }
   ],
   "comments": [],

@@ -13,6 +13,7 @@ const MhsPost = (props) => {
                 <p className="isi mahasiswa">Hp : {props.hp}</p>
                 <p className="isi mahasiswa">Angkatan :{props.angkatan}</p>
                 <p className="isi mahasiswa">Status : {props.status}</p>
+                <p className="isi mahasiswa">Date : {props.date}</p>
                 <button className="btn btn-sa btn-warning" onClick={() => props.hapusMahasiswa(props.idNim)}>Hapus</button>
             </div>
         </div>

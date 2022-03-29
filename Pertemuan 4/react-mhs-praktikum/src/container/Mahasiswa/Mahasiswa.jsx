@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import MhsPost from "../../components/MhsPost";
 import './Mahasiswa.css';
+import DatePicker from "react-datepicker";
 
 
 class Mahasiswa extends Component {
+
+    // const [startDate, setStartDate] = useState(Date());
 
     state = {
         listMahasiswa: [],
@@ -14,7 +17,8 @@ class Mahasiswa extends Component {
             alamat: "",
             hp: "",
             angkatan: "",
-            status: ""
+            status: "",
+            date: ""
         }
     }
 
@@ -104,12 +108,19 @@ class Mahasiswa extends Component {
                             <input type="text" className='form-control' id='status' name='status' onChange={this.handleTambahMahasiswa}></input>
                         </div>
                     </div>
+                    <div className='form-group row'>
+                        <label htmlFor="status" className='col-sm-2 col-form-label'>Date</label>
+                        <div className='col-sm-10'>
+                        {/* <DatePicker selected={startDate} onChange={(Date) => setStartDate(date)} /> */}
+                        <input type="date" className='form-control' id='date' name='date' onChange={this.handleTambahMahasiswa}></input>
+                        </div>
+                    </div>
                     <button type='submit' className='btn btn-primary' onClick={this.handleTombolSimpan}>Simpan</button>
                 </div>
                 <h2>List Mahasiswa</h2>
                 {
                     this.state.listMahasiswa.map(mahasiswa => {
-                        return <MhsPost key={mahasiswa.id} nim={mahasiswa.nim} nama={mahasiswa.nama} alamat={mahasiswa.alamat} angkatan={mahasiswa.angkatan} hp={mahasiswa.hp} status={mahasiswa.status} idNim={mahasiswa.id} hapusMahasiswa={this.handleHapusMahasiswa} />
+                        return <MhsPost key={mahasiswa.id} nim={mahasiswa.nim} nama={mahasiswa.nama} alamat={mahasiswa.alamat} angkatan={mahasiswa.angkatan} hp={mahasiswa.hp} status={mahasiswa.status} idNim={mahasiswa.id} date={mahasiswa.date} hapusMahasiswa={this.handleHapusMahasiswa} />
                     })
                 }
             </div>
